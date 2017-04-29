@@ -52,9 +52,10 @@ var stream = urlargs.stream;
 
 var phone = window.phone = PHONE({
     number        : "EmbedViewer" + Math.floor(Math.random()*100), // listen on username line else random
-    publish_key   : 'pub-c-561a7378-fa06-4c50-a331-5c0056d0163c', // Your Pub Key
-    subscribe_key : 'sub-c-17b7db8a-3915-11e4-9868-02ee2ddab7fe', // Your Sub Key
+    publish_key   : 'pub-c-e7602e73-ec61-4d11-851b-20fe2241e790', // Your Pub Key
+    subscribe_key : 'sub-c-6cf5fc68-2a61-11e7-8335-02ee2ddab7fe', // Your Sub Key
     oneway        : true,
+    ssl : (('https:' == document.location.protocol) ? true : false)
 });
 var ctrl = window.ctrl = CONTROLLER(phone);
 ctrl.ready(function(){

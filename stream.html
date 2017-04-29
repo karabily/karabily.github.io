@@ -105,7 +105,7 @@ function stream(form) {
     oneway        : true,
     
 	    broadcast     : true
-ssl : (('https:' == document.location.protocol) ? true : false)
+
 	});
 	//phone.debug(function(m){ console.log(m); })
 	var ctrl = window.ctrl = CONTROLLER(phone);
@@ -178,7 +178,7 @@ function end(){
 
 function genEmbed(w,h){
 	if (!streamName) return;
-	var url = "http://kevingleason.me/SimpleRTC/embed.html?stream=" + streamName;
+	var url = "https://karabily.github.io/embed.html?stream=" + streamName;
 	var embed    = document.createElement('iframe');
 	embed.src    = url;
 	embed.width  = w;
